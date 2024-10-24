@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20241024 09:55:45.832" rpa="false" schemaversion="3">
+<suite id="s1" name="Akar" source="C:\Users\akar5\PycharmProjects\Assignment\akar.robot">
+<test id="s1-t1" name="Automate Purchase Product" line="11">
+<kw name="Start TestCase" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241024 09:55:46.399" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/seleniumPractise/#/'.</msg>
+<status status="PASS" starttime="20241024 09:55:46.399" endtime="20241024 09:55:52.840"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20241024 09:55:52.840" endtime="20241024 09:55:52.988"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:55:54.990" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20241024 09:55:52.988" endtime="20241024 09:55:54.990"/>
+</kw>
+<status status="PASS" starttime="20241024 09:55:46.399" endtime="20241024 09:55:54.990"/>
+</kw>
+<kw name="Add the ordered product number to the card" library="DefinedKeywords">
+<kw name="Evaluate" library="BuiltIn">
+<var>${NumberOfClicks}</var>
+<arg>${OrderedProductNumber} - ${num2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241024 09:55:55.007" level="INFO">${NumberOfClicks} = 4</msg>
+<status status="PASS" starttime="20241024 09:55:55.007" endtime="20241024 09:55:55.007"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>${NumberOfClicks}</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ProductPlusIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:55:55.007" level="INFO">Clicking element '//div[@class='products']//div[1]//div[2]//a[2]'.</msg>
+<status status="PASS" starttime="20241024 09:55:55.007" endtime="20241024 09:55:55.283"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:55:55.783" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20241024 09:55:55.283" endtime="20241024 09:55:55.783"/>
+</kw>
+<status status="PASS" starttime="20241024 09:55:55.007" endtime="20241024 09:55:55.783"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ProductPlusIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:55:55.783" level="INFO">Clicking element '//div[@class='products']//div[1]//div[2]//a[2]'.</msg>
+<status status="PASS" starttime="20241024 09:55:55.783" endtime="20241024 09:55:55.980"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:55:56.480" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20241024 09:55:55.980" endtime="20241024 09:55:56.480"/>
+</kw>
+<status status="PASS" starttime="20241024 09:55:55.783" endtime="20241024 09:55:56.480"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ProductPlusIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:55:56.480" level="INFO">Clicking element '//div[@class='products']//div[1]//div[2]//a[2]'.</msg>
+<status status="PASS" starttime="20241024 09:55:56.480" endtime="20241024 09:55:56.600"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:55:57.101" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20241024 09:55:56.600" endtime="20241024 09:55:57.101"/>
+</kw>
+<status status="PASS" starttime="20241024 09:55:56.480" endtime="20241024 09:55:57.101"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ProductPlusIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:55:57.101" level="INFO">Clicking element '//div[@class='products']//div[1]//div[2]//a[2]'.</msg>
+<status status="PASS" starttime="20241024 09:55:57.101" endtime="20241024 09:55:57.244"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:55:57.745" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20241024 09:55:57.244" endtime="20241024 09:55:57.745"/>
+</kw>
+<status status="PASS" starttime="20241024 09:55:57.101" endtime="20241024 09:55:57.745"/>
+</iter>
+<status status="PASS" starttime="20241024 09:55:55.007" endtime="20241024 09:55:57.745"/>
+</for>
+<status status="PASS" starttime="20241024 09:55:55.007" endtime="20241024 09:55:57.745"/>
+</kw>
+<kw name="verify if product quantities are equal then click add to card" library="DefinedKeywords">
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${InputElementQuantity}</var>
+<arg>${InputElement}</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:55:57.811" level="INFO">${InputElementQuantity} = 5</msg>
+<status status="PASS" starttime="20241024 09:55:57.746" endtime="20241024 09:55:57.811"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${InputElementQuantity}" == "${OrderedProductNumber}"</arg>
+<arg>Click Element</arg>
+<arg>${AddToCartIcon}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AddToCartIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:55:57.811" level="INFO">Clicking element '//div[@class='products']//div[1]//div[3]//button[1]'.</msg>
+<status status="PASS" starttime="20241024 09:55:57.811" endtime="20241024 09:55:57.991"/>
+</kw>
+<status status="PASS" starttime="20241024 09:55:57.811" endtime="20241024 09:55:57.991"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:55:59.995" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20241024 09:55:57.991" endtime="20241024 09:55:59.995"/>
+</kw>
+<status status="PASS" starttime="20241024 09:55:57.746" endtime="20241024 09:55:59.995"/>
+</kw>
+<kw name="Open the card and get product values to verify" library="DefinedKeywords">
+<var>${product_values}</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CartIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:55:59.998" level="INFO">Clicking element '//*[@id='root']/div/header/div/div[3]/a[4]/img'.</msg>
+<status status="PASS" starttime="20241024 09:55:59.997" endtime="20241024 09:56:00.134"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:56:03.135" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20241024 09:56:00.134" endtime="20241024 09:56:03.135"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ProductNameToVerify}</var>
+<arg>${ProductNameElementPath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:03.238" level="INFO">${ProductNameToVerify} = Brocolli - 1 Kg</msg>
+<status status="PASS" starttime="20241024 09:56:03.135" endtime="20241024 09:56:03.238"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ProductPriceToVerify}</var>
+<arg>${ProductPriceElementPath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:03.317" level="INFO">${ProductPriceToVerify} = 120</msg>
+<status status="PASS" starttime="20241024 09:56:03.238" endtime="20241024 09:56:03.317"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ProductQuantityToVerify}</var>
+<arg>${ProductQuantityElementPath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:03.385" level="INFO">${ProductQuantityToVerify} = 5 Nos.</msg>
+<status status="PASS" starttime="20241024 09:56:03.317" endtime="20241024 09:56:03.385"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${ProductQuantityToVerify}</var>
+<arg>"""${ProductQuantityToVerify}"""[:1]</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20241024 09:56:03.401" level="INFO">${ProductQuantityToVerify} = 5</msg>
+<status status="PASS" starttime="20241024 09:56:03.385" endtime="20241024 09:56:03.401"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ProductTotalPriceToVerify}</var>
+<arg>${ProductTotalPriceElementPath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:03.480" level="INFO">${ProductTotalPriceToVerify} = 600</msg>
+<status status="PASS" starttime="20241024 09:56:03.401" endtime="20241024 09:56:03.480"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_values}</var>
+<arg>${ProductNameToVerify}</arg>
+<arg>${ProductPriceToVerify}</arg>
+<arg>${ProductQuantityToVerify}</arg>
+<arg>${ProductTotalPriceToVerify}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20241024 09:56:03.480" level="INFO">${product_values} = ['Brocolli - 1 Kg', '120', '5', '600']</msg>
+<status status="PASS" starttime="20241024 09:56:03.480" endtime="20241024 09:56:03.480"/>
+</kw>
+<msg timestamp="20241024 09:56:03.480" level="INFO">${product_values} = ['Brocolli - 1 Kg', '120', '5', '600']</msg>
+<status status="PASS" starttime="20241024 09:55:59.996" endtime="20241024 09:56:03.480"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ProductNameToVerify}</var>
+<arg>${product_values}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241024 09:56:03.488" level="INFO">${ProductNameToVerify} = Brocolli - 1 Kg</msg>
+<status status="PASS" starttime="20241024 09:56:03.488" endtime="20241024 09:56:03.488"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ProductPriceToVerify}</var>
+<arg>${product_values}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241024 09:56:03.488" level="INFO">${ProductPriceToVerify} = 120</msg>
+<status status="PASS" starttime="20241024 09:56:03.488" endtime="20241024 09:56:03.488"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ProductQuantityToVerify}</var>
+<arg>${product_values}[2]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241024 09:56:03.488" level="INFO">${ProductQuantityToVerify} = 5</msg>
+<status status="PASS" starttime="20241024 09:56:03.488" endtime="20241024 09:56:03.488"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ProductTotalPriceToVerify}</var>
+<arg>${product_values}[3]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241024 09:56:03.488" level="INFO">${ProductTotalPriceToVerify} = 600</msg>
+<status status="PASS" starttime="20241024 09:56:03.488" endtime="20241024 09:56:03.488"/>
+</kw>
+<kw name="Proceed to checkout and get the product info on card page to verify" library="DefinedKeywords">
+<var>${product_values2}</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ProceedToCheckoutButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:03.488" level="INFO">Clicking element '//*[@id='root']/div/header/div/div[3]/div[2]/div[2]/button'.</msg>
+<status status="PASS" starttime="20241024 09:56:03.488" endtime="20241024 09:56:03.774"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:56:06.774" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20241024 09:56:03.774" endtime="20241024 09:56:06.774"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ProductNameToVerify2}</var>
+<arg>${ProductNameElementPath2}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:06.859" level="INFO">${ProductNameToVerify2} = Brocolli - 1 Kg</msg>
+<status status="PASS" starttime="20241024 09:56:06.774" endtime="20241024 09:56:06.859"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ProductPriceToVerify2}</var>
+<arg>${ProductPriceElementPath2}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:06.932" level="INFO">${ProductPriceToVerify2} = 120</msg>
+<status status="PASS" starttime="20241024 09:56:06.859" endtime="20241024 09:56:06.932"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ProductQuantityToVerify2}</var>
+<arg>${ProductQuantityElementPath2}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:07.031" level="INFO">${ProductQuantityToVerify2} = 5</msg>
+<status status="PASS" starttime="20241024 09:56:06.947" endtime="20241024 09:56:07.031"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ProductTotalPriceToVerify2}</var>
+<arg>${ProductTotalPriceElementPath2}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:07.106" level="INFO">${ProductTotalPriceToVerify2} = 600</msg>
+<status status="PASS" starttime="20241024 09:56:07.031" endtime="20241024 09:56:07.106"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${product_values2}</var>
+<arg>${ProductNameToVerify2}</arg>
+<arg>${ProductPriceToVerify2}</arg>
+<arg>${ProductQuantityToVerify2}</arg>
+<arg>${ProductTotalPriceToVerify2}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20241024 09:56:07.106" level="INFO">${product_values2} = ['Brocolli - 1 Kg', '120', '5', '600']</msg>
+<status status="PASS" starttime="20241024 09:56:07.106" endtime="20241024 09:56:07.106"/>
+</kw>
+<msg timestamp="20241024 09:56:07.106" level="INFO">${product_values2} = ['Brocolli - 1 Kg', '120', '5', '600']</msg>
+<status status="PASS" starttime="20241024 09:56:03.488" endtime="20241024 09:56:07.106"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ProductNameToVerify2}</var>
+<arg>${product_values2}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241024 09:56:07.106" level="INFO">${ProductNameToVerify2} = Brocolli - 1 Kg</msg>
+<status status="PASS" starttime="20241024 09:56:07.106" endtime="20241024 09:56:07.106"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ProductPriceToVerify2}</var>
+<arg>${product_values2}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241024 09:56:07.123" level="INFO">${ProductPriceToVerify2} = 120</msg>
+<status status="PASS" starttime="20241024 09:56:07.106" endtime="20241024 09:56:07.123"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ProductQuantityToVerify2}</var>
+<arg>${product_values2}[2]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241024 09:56:07.124" level="INFO">${ProductQuantityToVerify2} = 5</msg>
+<status status="PASS" starttime="20241024 09:56:07.124" endtime="20241024 09:56:07.124"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${ProductTotalPriceToVerify2}</var>
+<arg>${product_values2}[3]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20241024 09:56:07.124" level="INFO">${ProductTotalPriceToVerify2} = 600</msg>
+<status status="PASS" starttime="20241024 09:56:07.124" endtime="20241024 09:56:07.124"/>
+</kw>
+<kw name="verify if values are equal" library="DefinedKeywords">
+<arg>${ProductNameToVerify}</arg>
+<arg>${ProductNameToVerify2}</arg>
+<arg>${ProductPriceToVerify}</arg>
+<arg>${ProductPriceToVerify2}</arg>
+<arg>${ProductQuantityToVerify}</arg>
+<arg>${ProductQuantityToVerify2}</arg>
+<arg>${ProductTotalPriceToVerify}</arg>
+<arg>${ProductTotalPriceToVerify2}</arg>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${ProducNameToVerify}" == "${ProducNameToVerify2}" and "${ProducPriceToVerify}" == "${ProducPriceToVerify2}" and "${ProducQuantityToVerify}" == "${ProducQuantityToVerify2}" and "${ProducTotalPriceToVerify}" == "${ProducTotalPriceToVerify2}"</arg>
+<arg>call if product values are equal</arg>
+<arg>ELSE</arg>
+<arg>call if product values are not equal</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="call if product values are equal" library="DefinedKeywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:07.139" level="INFO">Clicking button '//*[@id="root"]/div/div/div/div/button'.</msg>
+<status status="PASS" starttime="20241024 09:56:07.138" endtime="20241024 09:56:07.490"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:56:08.493" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20241024 09:56:07.490" endtime="20241024 09:56:08.493"/>
+</kw>
+<status status="PASS" starttime="20241024 09:56:07.124" endtime="20241024 09:56:08.493"/>
+</kw>
+<status status="PASS" starttime="20241024 09:56:07.124" endtime="20241024 09:56:08.493"/>
+</kw>
+<status status="PASS" starttime="20241024 09:56:07.124" endtime="20241024 09:56:08.493"/>
+</kw>
+<kw name="Select country and agree to terms and finish" library="DefinedKeywords">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${CountriesDropdown}</arg>
+<arg>${SelectedCountry}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20241024 09:56:08.497" level="INFO">Selecting options from selection list '//*[@id='root']/div/div/div/div/div/select' by value Iraq.</msg>
+<status status="PASS" starttime="20241024 09:56:08.497" endtime="20241024 09:56:08.832"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:56:09.833" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20241024 09:56:08.832" endtime="20241024 09:56:09.833"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TermsCheckBox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:09.833" level="INFO">Clicking element '//*[@id='root']/div/div/div/div/input'.</msg>
+<status status="PASS" starttime="20241024 09:56:09.833" endtime="20241024 09:56:10.020"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:56:11.021" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20241024 09:56:10.020" endtime="20241024 09:56:11.021"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ProceedButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 09:56:11.024" level="INFO">Clicking element '//*[@id='root']/div/div/div/div/button'.</msg>
+<status status="PASS" starttime="20241024 09:56:11.021" endtime="20241024 09:56:11.225"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241024 09:56:13.228" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20241024 09:56:11.227" endtime="20241024 09:56:13.228"/>
+</kw>
+<status status="PASS" starttime="20241024 09:56:08.493" endtime="20241024 09:56:13.228"/>
+</kw>
+<kw name="Finish TestCase" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20241024 09:56:13.228" endtime="20241024 09:56:15.664"/>
+</kw>
+<status status="PASS" starttime="20241024 09:56:13.228" endtime="20241024 09:56:15.667"/>
+</kw>
+<status status="PASS" starttime="20241024 09:55:46.399" endtime="20241024 09:56:15.667"/>
+</test>
+<status status="PASS" starttime="20241024 09:55:45.848" endtime="20241024 09:56:15.673"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Akar">Akar</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
