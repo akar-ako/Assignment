@@ -29,9 +29,9 @@ Open the card and get product values to verify
     ${ProductQuantityToVerify}    get text    ${ProductQuantityElementPath}
     ${ProductQuantityToVerify}=    Evaluate    """${ProductQuantityToVerify}"""[:1]
     ${ProductTotalPriceToVerify}    get text   ${ProductTotalPriceElementPath}
-     ${product_values}=    Create List    ${ProductNameToVerify}    ${ProductPriceToVerify}    ${ProductQuantityToVerify}    ${ProductTotalPriceToVerify}
-     [Return]    ${product_values}
-#    [Return]    ${ProductNameToVerify}    ${ProductPriceToVerify}    ${ProductQuantityToVerify}    ${ProductTotalPriceToVerify}
+#     ${product_values}=    Create List    ${ProductNameToVerify}    ${ProductPriceToVerify}    ${ProductQuantityToVerify}    ${ProductTotalPriceToVerify}
+#     [Return]    ${product_values}
+    [Return]    ${ProductNameToVerify}    ${ProductPriceToVerify}    ${ProductQuantityToVerify}    ${ProductTotalPriceToVerify}
 
 Proceed to checkout and get the product info on card page to verify
     # Proceed to checkout

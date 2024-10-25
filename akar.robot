@@ -17,18 +17,24 @@ Automate Purchase Product
     DefinedKeywords.verify if product quantities are equal then click add to card
 
     # Open Card and Get the product info on home page to verify
-    ${product_values}=    DefinedKeywords.Open the card and get product values to verify
-    ${ProductNameToVerify}=  set variable    ${product_values}[0]
-    ${ProductPriceToVerify}=  set variable    ${product_values}[1]
-    ${ProductQuantityToVerify}=  set variable    ${product_values}[2]
-    ${ProductTotalPriceToVerify}=  set variable    ${product_values}[3]
+#    ${product_values}=    DefinedKeywords.Open the card and get product values to verify
+#    ${ProductNameToVerify}=  set variable    ${product_values}[0]
+#    ${ProductPriceToVerify}=  set variable    ${product_values}[1]
+#    ${ProductQuantityToVerify}=  set variable    ${product_values}[2]
+#    ${ProductTotalPriceToVerify}=  set variable    ${product_values}[3]
+
+    # Open Card and Get the product info on home page to verify with Code Simplification
+    ${ProductNameToVerify}    ${ProductPriceToVerify}    ${ProductQuantityToVerify}    ${ProductTotalPriceToVerify}=    DefinedKeywords.Open the card and get product values to verify
 
     # Proceed to checkout and get the product info on card page to verify
-    ${product_values2}=    DefinedKeywords.Proceed to checkout and get the product info on card page to verify
-    ${ProductNameToVerify2}=  set variable    ${product_values2}[0]
-    ${ProductPriceToVerify2}=  set variable    ${product_values2}[1]
-    ${ProductQuantityToVerify2}=  set variable    ${product_values2}[2]
-    ${ProductTotalPriceToVerify2}=  set variable    ${product_values2}[3]
+#    ${product_values2}=    DefinedKeywords.Proceed to checkout and get the product info on card page to verify
+#    ${ProductNameToVerify2}=  set variable    ${product_values2}[0]
+#    ${ProductPriceToVerify2}=  set variable    ${product_values2}[1]
+#    ${ProductQuantityToVerify2}=  set variable    ${product_values2}[2]
+#    ${ProductTotalPriceToVerify2}=  set variable    ${product_values2}[3]
+
+    # Proceed to checkout and get the product info on card page to verify with Code Simplification
+    ${ProductNameToVerify2}    ${ProductPriceToVerify2}    ${ProductQuantityToVerify2}    ${ProductTotalPriceToVerify2}=    DefinedKeywords.Proceed to checkout and get the product info on card page to verify
 
     # Check the product values from both side are equal or not
     DefinedKeywords.verify if values are equal    ${ProductNameToVerify}    ${ProductNameToVerify2}    ${ProductPriceToVerify}    ${ProductPriceToVerify2}    ${ProductQuantityToVerify}    ${ProductQuantityToVerify2}    ${ProductTotalPriceToVerify}    ${ProductTotalPriceToVerify2}
